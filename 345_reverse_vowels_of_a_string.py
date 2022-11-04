@@ -11,9 +11,11 @@ class Solution:
         # Define the vowels
         vowels = "AaEeIiOoUu"
 
+        # Use two pointers approach on the string converted to list
         lst = list(s)
         first, last = 0, len(lst) - 1
 
+        # Switch vowels
         while first < last:
             if lst[first] in vowels and lst[last] in vowels:
                 lst[first], lst[last] = lst[last], lst[first]
