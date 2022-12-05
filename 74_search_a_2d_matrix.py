@@ -29,16 +29,11 @@ class Solution:
             else:
                 break
 
-        print("Middle row", middle_row)
-
-
+        # Check if row is valid
         if first_row > last_row:
             return False
 
-
-
         # Binary search on the row itself to find the target
-
         first_column, last_column = 0, COLS - 1
 
         while first_column <= last_column:
